@@ -1,0 +1,9 @@
+# Public release repository allowlist assets only
+*.apk
+*.aab
+*.jks
+*.keystore
+keystore.properties
+local.properties
+.env
+.DS_Store

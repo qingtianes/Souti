@@ -1,0 +1,32 @@
+name: Public boundary
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  allowlist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject private or unexpected files
+        shell: bash
+        run: |
+          set -euo pipefail
+          allowed='^(\.gitignore|README\.md|CHANGELOG\.md|PRIVACY_POLICY\.md|EULA\.md|LICENSE\.md|THIRD_PARTY_NOTICES\.md|SECURITY\.md|SUPPORT\.md|assets/souti-icon\.png|docs/(USAGE|COMPATIBILITY|FAQ)\.md|\.github/ISSUE_TEMPLATE/(bug_report|feature_request)\.yml|\.github/ISSUE_TEMPLATE/config\.yml|\.github/workflows/public-boundary\.yml)$'
+          bad=0
+          while IFS= read -r file; do
+            if [[ ! "$file" =~ $allowed ]]; then
+              echo "Unexpected public file: $file"
+              bad=1
+            fi
+          done < <(git ls-files)
+
+          if git grep -nIE '(SoutiAssistant|Souti-Private|PROJECT_CONTEXT|docs/bug_reports|[A-Z]:\\\\|storePassword|keyPassword|api[_-]?key|BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY)' -- ':!\.github/workflows/public-boundary.yml'; then
+            echo 'Private-project marker or secret-like content detected.'
+            bad=1
+          fi
+          exit "$bad"

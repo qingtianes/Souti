@@ -1,0 +1,19 @@
+name: 功能建议
+description: 提出新功能或体验改进
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: 请描述使用场景，不要上传真实题库或敏感材料。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 使用场景与问题
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+    validations:
+      required: true

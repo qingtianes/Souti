@@ -1,0 +1,55 @@
+name: Bug 报告
+description: 报告可复现的问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请勿上传真实题库、考试材料、账号、密码、未打码截图或其他敏感数据。
+  - type: input
+    id: version
+    attributes:
+      label: Souti 版本
+      placeholder: 例如 v1.1.5
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: 设备与系统
+      placeholder: 例如 Android 14 / HarmonyOS + 卓易通
+    validations:
+      required: true
+  - type: dropdown
+    id: feature
+    attributes:
+      label: 功能入口
+      options:
+        - 题库导入
+        - 浮窗搜题
+        - 读屏搜题
+        - 扫描搜题
+        - 设置或其他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 请使用脱敏示例描述操作顺序。
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 实际结果与期望结果
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我确认提交内容已脱敏，不包含真实题库、考试材料、个人信息或凭据。
+          required: true
