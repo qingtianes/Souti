@@ -15,7 +15,7 @@ Souti（搜题助手）是一款 Android 本地题库 OCR 检索工具，可导�
 - 支持架构：arm64-v8a / armeabi-v7a / x86_64
 - 安装包：`Souti-v1.1.5-release.apk`
 
-## 下载与校验
+## 下载与校验`r`n`r`n正式 APK 和校验文件位于本仓库的 Releases 页面。
 
 请从本仓库的 **Releases** 页面下载安装包，不要从不明来源获取 APK。
 
