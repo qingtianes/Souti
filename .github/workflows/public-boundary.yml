@@ -16,7 +16,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          allowed='^(\.gitignore|README\.md|CHANGELOG\.md|PRIVACY_POLICY\.md|EULA\.md|LICENSE\.md|THIRD_PARTY_NOTICES\.md|SECURITY\.md|SUPPORT\.md|assets/souti-icon\.png|docs/(USAGE|COMPATIBILITY|FAQ)\.md|\.github/ISSUE_TEMPLATE/(bug_report|feature_request)\.yml|\.github/ISSUE_TEMPLATE/config\.yml|\.github/workflows/public-boundary\.yml)$'
+          allowed='^(\.gitignore|README\.md|CHANGELOG\.md|PRIVACY_POLICY\.md|EULA\.md|LICENSE\.md|THIRD_PARTY_NOTICES\.md|SECURITY\.md|SUPPORT\.md|assets/souti-icon\.png|docs/(USAGE|COMPATIBILITY|FAQ)\.md|Souti-v[0-9.]+-release\.apk\.sha256|\.github/ISSUE_TEMPLATE/(bug_report|feature_request)\.yml|\.github/ISSUE_TEMPLATE/config\.yml|\.github/workflows/public-boundary\.yml)$'
           bad=0
           while IFS= read -r file; do
             if [[ ! "$file" =~ $allowed ]]; then
