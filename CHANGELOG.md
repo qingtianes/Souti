@@ -1,5 +1,13 @@
 # 更新日志
 
+## v1.1.8
+
+- fixed .xls import on Android release.
+
+## v1.1.7
+
+- migrated .xls parsing to Apache POI HSSF.
+
 ## v1.1.5
 
 - 优化计算题 OCR 与关键数字匹配，减少评分标准和其他答案片段干扰。
