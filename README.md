@@ -10,25 +10,26 @@ Souti（搜题助手）是一款 Android 本地题库 OCR 检索工具，可导�
 
 ## 当前版本
 
-- 最新公开版本：`v1.1.7`
+- 最新公开版本：`v1.1.8`
 - Android：8.0 及以上（API 26+）
 - 支持架构：arm64-v8a / armeabi-v7a / x86_64
-- 安装包：`Souti-v1.1.7-release.apk`
+- 安装包：`Souti-v1.1.8-release.apk`
 
-## 下载与校验`r`n`r`n正式 APK 和校验文件位于本仓库的 Releases 页面。
+## 下载与校验`
+正式 APK 和校验文件位于本仓库的 Releases 页面。
 
 请从本仓库的 **Releases** 页面下载安装包，不要从不明来源获取 APK。
 
-`v1.1.7` SHA-256：
+`v1.1.8` SHA-256：
 
 ```text
-4128AAD7E058ED64E554C59AA1F1056FE945683E611C66F35567F516C0FE9FA9
+C1DF09251C5F308BF5E912977D2AD575BB4B8E26669EFA0F78B2B23A5C6160D0
 ```
 
 Windows PowerShell 校验：
 
 ```powershell
-Get-FileHash .\Souti-v1.1.7-release.apk -Algorithm SHA256
+Get-FileHash .\Souti-v1.1.8-release.apk -Algorithm SHA256
 ```
 
 ## 使用说明
