@@ -2,12 +2,18 @@
 
 ## v1.1.8
 
-- fixed .xls import on Android release.
+- 修复 `.xls` 题库在 Android 真机/Release 上导入失败的问题。
+- 将 `.xls` 解析替换为 Android 适配版 Apache POI（poi-android 3.17），解决设备端导入无反应/初始化异常。
+- `XlsBankParser` 增加完整异常日志，便于后续定位导入问题。
 
 ## v1.1.7
 
-- migrated .xls parsing to Apache POI HSSF.
+- 将 `.xls` 解析从 JExcelAPI 迁移到 Apache POI HSSF。
+- 移除 LGPL 的 JExcelAPI 依赖和 Log4j 1.x 传递依赖。
 
+## v1.1.6
+
+- 完成闭源发布加固：R8 混淆、资源压缩及发布流程调整。
 ## v1.1.5
 
 - 优化计算题 OCR 与关键数字匹配，减少评分标准和其他答案片段干扰。
