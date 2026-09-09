@@ -10,26 +10,26 @@ Souti（搜题助手）是一款 Android 本地题库 OCR 检索工具，可导�
 
 ## 当前版本
 
-- 最新公开版本：`v1.1.8`
+- 最新公开版本：`v1.2.0`
 - Android：8.0 及以上（API 26+）
 - 支持架构：arm64-v8a / armeabi-v7a / x86_64
-- 安装包：`Souti-v1.1.8-release.apk`
+- 安装包：`Souti-v1.2.0-release.apk`
 
 ## 下载与校验
 正式 APK 和校验文件位于本仓库的 Releases 页面。
 
 请从本仓库的 **Releases** 页面下载安装包，不要从不明来源获取 APK。
 
-`v1.1.8` SHA-256：
+`v1.2.0` SHA-256：
 
 ```text
-C1DF09251C5F308BF5E912977D2AD575BB4B8E26669EFA0F78B2B23A5C6160D0
+D164F150A2BA3445D5C69F0B658FF64FA8721D1921F2E85AB86E84AB8C765722
 ```
 
 Windows PowerShell 校验：
 
 ```powershell
-Get-FileHash .\Souti-v1.1.8-release.apk -Algorithm SHA256
+Get-FileHash .\Souti-v1.2.0-release.apk -Algorithm SHA256
 ```
 
 ## 使用说明
@@ -60,7 +60,7 @@ Get-FileHash .\Souti-v1.1.8-release.apk -Algorithm SHA256
 
 ## 隐私
 
-OCR、截图、摄像头画面和题库匹配均在设备本地完成，应用不提供账号系统，也不上传用户题库。详情见 [PRIVACY_POLICY.md](PRIVACY_POLICY.md)。
+OCR、截图、摄像头画面和题库匹配均在设备本地完成，应用不提供账号系统，也不上传用户题库。佛脚刷题导出同样只在本地转换，不上传题库。详情见 [PRIVACY_POLICY.md](PRIVACY_POLICY.md)。
 
 ## 问题反馈
 

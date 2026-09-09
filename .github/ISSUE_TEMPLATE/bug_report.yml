@@ -11,7 +11,7 @@ body:
     id: version
     attributes:
       label: Souti 版本
-      placeholder: 例如 v1.1.5
+      placeholder: 例如 v1.2.0
     validations:
       required: true
   - type: input
